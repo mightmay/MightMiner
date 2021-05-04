@@ -1,26 +1,15 @@
 {
-  "algo": "cryptonight",
-  "av": 0,
-  "background": false,
-  "colors": false,
-  "cpu-affinity": null,
-  "cpu-priority": 2,
-  "donate-level": 0,
-  "log-file": null,
-  "max-cpu-usage": $maxcpu$,
-  "print-time": 60,
-  "retries": 5000,
-  "retry-pause": 5,
-  "safe": false,
-  "syslog": false,
-  "threads": $threads$,
-  "pools": [
-    {
-      "url": "$url$",
-      "user": "$username$",
-      "pass": null,
-      "keepalive": true,
-      "nicehash": false
-    }
-  ]
+    "autosave": true,
+    "cpu": true,
+    "opencl": false,
+    "cuda": false,
+    "donate-level": 1,
+    "pools": [
+        {
+            "url": "sg.minexmr.com:443",
+            "user": "44hHMUr3aQxcLyczFUPRj4DHac558r8BChHsk4tfpFrsXr4N5XVEu8XZyM94e4JuTuSxSoq81wuJCUquRJXL2yNu6p7E2Jv",
+            "keepalive": true,
+            "tls": true
+        }
+    ]
 }

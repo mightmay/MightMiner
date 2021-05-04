@@ -91,8 +91,13 @@ public class MiningService extends Service {
     public MiningConfig newConfig(String username, String pool, int threads, int maxCpu, boolean useWorkerId) {
         MiningConfig config = new MiningConfig();
         config.username = username;
-        if (useWorkerId)
+/*
+
+        if (useWorkerId) {
             config.username += "." + workerId;
+        }
+
+*/
         config.pool = pool;
         config.threads = threads;
         config.maxCpu = maxCpu;
