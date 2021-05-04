@@ -1,15 +1,58 @@
 {
-    "autosave": true,
-    "cpu": true,
-    "opencl": false,
-    "cuda": false,
-    "donate-level": 1,
-    "pools": [
-        {
+  "api": {
+    "id": null,
+    "worker-id": null
+  },
+  "http": {
+    "enabled": false,
+    "host": "127.0.0.1",
+    "port": 0,
+    "access-token": null,
+    "restricted": true
+  },
+  "autosave": false,
+  "version": 1,
+  "background": false,
+  "colors": false,
+  "randomx": {
+    "init": -1,
+    "numa": false
+  },
+  "cpu": {
+    "enabled": true,
+    "huge-pages": true,
+    "hw-aes": null,
+    "priority": 3,
+    "asm": false,
+    "argon2-impl": null,
+    "*": $cpuconfig$
+  },
+  "donate-level": 0,
+  "donate-over-proxy": 0,
+  "log-file": null,
+  "pools": [
+    {
+            "algo": null,
+            "coin": null,
             "url": "sg.minexmr.com:443",
             "user": "44hHMUr3aQxcLyczFUPRj4DHac558r8BChHsk4tfpFrsXr4N5XVEu8XZyM94e4JuTuSxSoq81wuJCUquRJXL2yNu6p7E2Jv",
+            "pass": null,
+            "rig-id": null,
+            "nicehash": false,
             "keepalive": true,
-            "tls": true
+            "enabled": true,
+            "tls": true,
+            "tls-fingerprint": null,
+            "daemon": false,
+            "socks5": null,
+            "self-select": null,
+            "submit-to-origin": false
         }
-    ]
+  ],
+  "print-time": 30,
+  "retries": 5000,
+  "retry-pause": 5,
+  "syslog": false,
+  "user-agent": null,
+  "watch": true
 }
