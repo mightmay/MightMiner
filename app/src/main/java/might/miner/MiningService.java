@@ -69,9 +69,10 @@ public class MiningService extends Service {
         String abi = Build.CPU_ABI.toLowerCase();
         //abi = "arm64-v8a";
         // copy binaries to a path where we may execute it);
-        Tools.copyFile(this, abi + "/xmrig", privatePath + "/xmrig");
-        Tools.copyFile(this, abi + "/libuv", privatePath + "/libuv.so");
-        Tools.copyFile(this, "libc++.so", privatePath + "/libc++_shared.so");
+        //Tools.copyFile(this, abi + "/xmrig", privatePath + "/xmrig");
+        Tools.copyFile(this, abi + "/xlarig", privatePath + "/xlarig");
+        //Tools.copyFile(this, abi + "/libuv", privatePath + "/libuv.so");
+        //Tools.copyFile(this, "libc++.so", privatePath + "/libc++_shared.so");
         //System.out.println("Copied File");
 
     }
@@ -157,7 +158,7 @@ public class MiningService extends Service {
             // run xmrig using the config
 
 
-            String[] args = {"./xmrig"};
+            String[] args = {"./xlarig"};
             ProcessBuilder pb = new ProcessBuilder(args);
             // in our directory
             pb.directory(getApplicationContext().getFilesDir());
